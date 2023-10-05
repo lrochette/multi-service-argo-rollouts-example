@@ -16,7 +16,7 @@ spec:
           - path: /plain-backend(/|$)(.*)
             backend:
               service:
-                name: my-plain-frontend-service
+                name: my-plain-backend-service
                 port:
                   number: 8080
             pathType: Prefix
