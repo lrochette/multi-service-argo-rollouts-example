@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: plain-frontend
+  name: my-plain-frontend
   annotations:
     ingress.kubernetes.io/proxy-body-size: 100M
     ingress.kubernetes.io/app-root: /
