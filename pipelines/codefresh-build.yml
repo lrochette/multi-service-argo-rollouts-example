@@ -14,7 +14,7 @@ steps:
     type: "git-clone"
     repo: "lrochette/multi-service-argo-rollouts-example"
     revision: "main"
-    git: "github-1"
+    git: "github"
     stage: "prepare"
 
   lint_backend:
