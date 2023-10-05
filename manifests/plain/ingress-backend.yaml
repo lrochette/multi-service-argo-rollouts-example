@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: plain
+  name: plain-backend
   annotations:
     ingress.kubernetes.io/proxy-body-size: 100M
     kubernetes.io/ingress.class: nginx
@@ -13,7 +13,7 @@ spec:
     - host: lrcsdp.support.cf-cd.com
       http:
         paths:
-          - path: /plain(/|$)(.*)
+          - path: /plain-backend(/|$)(.*)
             backend:
               service:
                 name: my-plain-frontend-service
