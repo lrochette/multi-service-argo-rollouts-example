@@ -53,6 +53,7 @@ steps:
     tags:
     - "latest"
     dockerfile: "Dockerfile"
+    registry: docker-lr
     stage: "build"
 
   build_fe:
@@ -64,4 +65,5 @@ steps:
     tags:
     - "latest"
     dockerfile: "Dockerfile"
+    registry: docker-lr
     stage: "build"
